@@ -1,0 +1,22 @@
+<h1>New Staff</h1>
+
+<%= form_with(model: @staff, local: true) do |form| %>
+  <p>
+    <%= form.label :username %><br>
+    <%= form.text_field :username %>
+  </p>
+ 
+  <p>
+    <%= form.label :password %><br>
+    <%= form.text_field :password %>
+  </p>
+  
+  <p>
+    <%= form.label :name %><br>
+    <%= form.text_field :name %>
+  </p>
+
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>

@@ -1,0 +1,18 @@
+<h1>Staff List</h1>
+
+<table>
+  <tr>
+    <th>Username</th>
+    <th>Name</th>
+    <th>Password</th>
+  </tr>
+ 
+  <% @staffs.each do |staff| %>
+    <tr>
+      <td><%= staff.username %></td>
+      <td><%= staff.name %></td>
+      <td><%= staff.password %></td>
+      <td><%= link_to 'Show', staff_path(staff) %></td>
+    </tr>
+  <% end %>
+</table>
